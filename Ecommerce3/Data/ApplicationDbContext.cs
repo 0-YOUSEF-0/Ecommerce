@@ -1,7 +1,7 @@
 ﻿using Ecommerce3.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce3.Data
+namespace Ecommerce3.Datat
 {
     public class ApplicationDbContext : DbContext
     {
@@ -10,7 +10,7 @@ namespace Ecommerce3.Data
         {
             base.OnConfiguring(optionsBuilder);
 
-            optionsBuilder.UseSqlServer("Data Source=.;Ecommerce ;Integrated Security=True;Connect Timeout=30;Encrypt=True;Trust Server Certificate=True;Application Intent=ReadWrite;Multi Subnet Failover=False;Command Timeout=30");
+            optionsBuilder.UseSqlServer("Data Source=.;Datebase=Ecommerce1;Integrated Security=True;Persist Security Info=False;Pooling=False;MultipleActiveResultSets=False;Encrypt=True;TrustServerCertificate=True;Application Name=\"SQL Server Management Studio\";Command Timeout=0");
         }
     }
 }
