@@ -1,7 +1,7 @@
 ﻿using Ecommerce3.Models;
 using Microsoft.EntityFrameworkCore;
 
-namespace Ecommerce3.Datat
+namespace Ecommerce3.Data
 {
     public class ApplicationDbContext : DbContext
     {
